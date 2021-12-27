@@ -1,0 +1,19 @@
+.navBar{
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.opcionMenu{
+    margin-left: 20px;
+    margin-right: 20px;
+}

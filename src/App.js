@@ -1,17 +1,19 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Button from "react-bootstrap/Button";
+import { NavBar } from "./components/navBar/navBar";
+import "./components/navBar/navBar.css";
 
-function App() {
+export const App = () => {
+  const sayName = () =>
+    alert(
+      "Sudestar es una comunidad dedicada a la difusión de contenido audiovisual"
+    );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Clase 2 - Agustin Viceconte</p>
-       <h1>Sudestar</h1>
-      </header>
-      
+    <div className="app">
+      <NavBar />
+      <Button variant="primary" onClick={sayName}>
+        Acerca de
+      </Button>
     </div>
   );
-}
-
-export default App;
+};
