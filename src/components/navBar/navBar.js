@@ -1,13 +1,20 @@
+
+import {CartWidget} from "../cartWidget/cartWidget";
+import  styles  from "./navBar.module.css";
+import "../cartWidget/cartWidget.css"
+
+
 export const NavBar = () => {
   return (
-    <nav className="navBar">
+    <nav className={styles.navBar}>
       <h1>SUDESTAR</h1>
-      <ul className="menu">
-          <li className="opcionMenu" >Cursos</li>
-          <li className="opcionMenu">Noticias</li>
-          <li className="opcionMenu">Contacto</li>
-    </ul>
-      
-    </nav>
+      <ul className={styles.menu}>
+        <li className={styles.opcionMenu}>Cursos</li>
+        <li className={styles.opcionMenu}>Noticias</li>
+        <li className={styles.opcionMenu}>Contacto</li>
+        </ul>
+      <CartWidget className="carrito"/>
+      </nav>
+  
   );
 };

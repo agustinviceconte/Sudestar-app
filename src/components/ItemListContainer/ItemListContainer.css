@@ -1,0 +1,11 @@
+.itemListContainer{
+    background-color:orange;
+    border:black solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.greeting{
+    padding: 20px;
+}

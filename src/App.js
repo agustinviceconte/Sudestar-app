@@ -1,17 +1,17 @@
 import "./App.css";
 import Button from "react-bootstrap/Button";
 import { NavBar } from "./components/navBar/navBar";
-import "./components/navBar/navBar.css";
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+
 
 export const App = () => {
-  const sayName = () =>
-    alert(
-      "Sudestar es una comunidad dedicada a la difusión de contenido audiovisual"
-    );
+  const acercaDe = () => alert("Copyright 2022");
+
   return (
     <div className="app">
       <NavBar />
-      <Button variant="primary" onClick={sayName}>
+      <ItemListContainer greeting="Bienvenidos a Sudestar"/>
+      <Button variant="primary" onClick={acercaDe}>
         Acerca de
       </Button>
     </div>
