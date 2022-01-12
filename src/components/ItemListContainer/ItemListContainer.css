@@ -1,11 +1,17 @@
 .itemListContainer{
-    background-color:orange;
-    border:black solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    background-color: orange;
+    height: 400px;
+    margin-top: 0%;
+
 }
 
 .greeting{
     padding: 20px;
+    text-align: center;
 }
+
+.contador{
+  text-align: center;
+}
+
+

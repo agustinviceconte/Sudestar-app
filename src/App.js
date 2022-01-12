@@ -1,6 +1,6 @@
 import "./App.css";
 import Button from "react-bootstrap/Button";
-import { NavBar } from "./components/navBar/navBar";
+import { NavBar } from "./components/NavBar/NavBar";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 
 

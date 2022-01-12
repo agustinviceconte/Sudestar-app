@@ -1,7 +1,7 @@
 
-import {CartWidget} from "../cartWidget/cartWidget";
-import  styles  from "./navBar.module.css";
-import "../cartWidget/cartWidget.css"
+import {CartWidget} from "../CartWidget/CartWidget";
+import  styles  from "./NavBar.module.css";
+import "../CartWidget/CartWidget.css"
 
 
 export const NavBar = () => {

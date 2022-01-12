@@ -1,6 +1,6 @@
 import React from 'react'
 import carrito from './carrito.png'
-import "./cartWidget.css"
+import "./CartWidget.css"
 
 console.log(carrito);
 
