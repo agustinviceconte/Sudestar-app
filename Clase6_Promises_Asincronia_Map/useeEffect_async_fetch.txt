@@ -1,0 +1,48 @@
+import {useEffect, useState} from 'react'
+import {NavBar} from './components/NavBar/NavBar'
+import {Section} from './components/Section/Section' 
+import './App.css'
+export const App=()=>{
+
+const [dogs, setDogs] = useState([])
+const[error, setError]= useState([])
+
+
+const getDogs = async()=>{
+  setDogs([])
+
+  try{
+  const response = await fetch('https://dog.ceo/api/breeds/image/random/6')
+  const data= await response.json()
+  setDogs(data.message)
+  console.log(data)
+} catch(error){
+  setError(error);
+}
+}; 
+
+useEffect(()=>{
+  getDogs()
+},[])
+
+return (
+<div className ='app'>
+<NavBar />
+<Section title='Perros'>
+<p>Obteniendo perros de API pública</p>
+<button onClick={getDogs}>Obtener perros</button>
+<ul>
+    {dogs.length ===0 ? (
+      <p>Cargando perros</p>
+    ):(
+    dogs.map((dog) =>(
+  <li key={dog}>
+    <img className='dog' src={dog} alt='perro'/>
+  </li>
+))
+    )}
+</ul>
+</Section>
+</div>
+)
+}

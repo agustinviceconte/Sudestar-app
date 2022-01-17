@@ -4,6 +4,7 @@ import { NavBar } from "./components/NavBar/NavBar";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 
 
+
 export const App = () => {
   const acercaDe = () => alert("Copyright 2022");
 
@@ -17,3 +18,9 @@ export const App = () => {
     </div>
   );
 };
+
+
+
+
+
+
