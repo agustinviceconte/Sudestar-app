@@ -9,8 +9,8 @@ export const NavBar = () => {
     <nav className={styles.navBar}>
       <h1>SUDESTAR</h1>
       <ul className={styles.menu}>
-        <li className={styles.opcionMenu}>Cursos</li>
-        <li className={styles.opcionMenu}>Noticias</li>
+        <li className={styles.opcionMenu}>Productos</li>
+        <li className={styles.opcionMenu}>Novedades</li>
         <li className={styles.opcionMenu}>Contacto</li>
         </ul>
       <CartWidget className="carrito"/>

@@ -1,11 +1,13 @@
-import Item from "../Item/Item";
-import "./Item.css"
+import {Item} from "../Item/Item";
 
-const ItemList = ({ products }) => {
+
+export const ItemList = ({ products }) => {
   console.log("Productos en ItemList", products);
   return (
+    <div>
+      <h1 className="titulo">Productos</h1>
     <div className="Items">
-      <h1>Productos</h1>
+      
       {products.map((product) => {
         return (
           <Item
@@ -18,7 +20,8 @@ const ItemList = ({ products }) => {
         );
       })}
     </div>
+    </div>
   );
 };
 
-export default ItemList;
+

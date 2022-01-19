@@ -1,13 +1,19 @@
 .itemListContainer{
-    background-color: orange;
+    
     height: fit-content;
     margin-top: 0%;
+    background-color:orange;
+    width:240px;
+    padding: 24px;
+    border-radius: 16px;
 
 }
 
 .greeting{
-    padding: 20px;
+    
     text-align: center;
+    color:black;
+    font-size: 16px;
 }
 
 .contador{

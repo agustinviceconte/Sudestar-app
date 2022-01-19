@@ -1,0 +1,136 @@
+URL Y VERB
+
+GET: quiero obtener
+POST: quiero crear
+PUT:quiero crear o actualizar
+PATCH: quiero alterar parcialmente
+DELETE: quiero eliminar
+
+--------------------------------------
+QUERY PARAMS
+
+Permite incluir en la dirección información que se usa para especificarle al receptor parámetros
+
+
+                              query param
+                                |
+https:/www,google.com.ar/search?q=coderhouse
+
+URL QUERY PARAMS
+-----------------
+ - Se separa la URL de los parámetros utilizando el signo de pregunta ?
+ - Cada parámetro tendra key=value & key2=value2 
+ - Cada parámetro se puede separar por &
+
+        http://url.com/find?type=order&id=1234
+
+URL PARAMS/SEGMENTS
+---------------------
+
+Permite incluir el identificador del recurso dentro de la misma url
+
+https://myapp.coder/student/1234 (busca el recurso student con id 1234
+
+https://myapp.coder/student/1234/courses (busca el recurso courses para student 1234)
+
+RECURSOS/RESTFUL
+--------------------
+  - Cuando se respetan las convenciones de verbo/método y código de respuesta, estamos
+    frente a un diseño arquitectural de tipo REST
+  - Si además transferimos js o xml, es conocido comoAJAX
+
+-------------------
+BODY
+
+  - Se utiliza para transferir piezas de información entre el cliente y el servidor
+
+  POST / create_user HTTP/1.1
+
+  Host: localhost:3000              |
+  Connection: keep-alive            |> headr
+  Connection-type: application/json |
+
+  {"name":"John", "age:35}  ---> body
+
+----------------------------------
+HEADER
+ 
+   Se usan para:
+
+ - Definir las respuestas soportadas, requeridas o preferidas
+ - Agregar información extra:
+      - Auth tokens, cookies
+      - Lenguaje preferido
+      - Si acepta contenido cacheado
+ - Lo que quieras en forma de texto
+
+-------------------------------------
+REQUEST EN EL BROWSER
+
+FETCH (cuando no se aplica ningún verbo, por defecto es GET)
+
+fetch('https://pai.coder.com.ar/user/1234')
+ .then(function(response){
+  return response.json();
+  })
+  .then(function(user){
+  console.log(user);
+  });
+--------------------------------------------
+
+pokeapi.co
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

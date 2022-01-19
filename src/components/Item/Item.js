@@ -1,12 +1,14 @@
-const Item=({title,price,pictureUrl,description})=>{
+import React from "react";
+import "../Item/Item.css"
+export const Item=({title,price,pictureUrl,description})=>{
     return(
-      <div>  
+      <div className="item">  
+        <h2 className="title">{title}</h2>
+        <img className="image" src= {pictureUrl} alt="img"/> 
+        <h2 className="description">{description}</h2>
+        <h2>US$: {price}</h2>
         
-        <h2>{title}</h2>
-        <h2>{description}</h2>
-        <h2>Precio: US${price}</h2>
-        <img className="Img" alt={title} src={pictureUrl}></img>
+        
     </div>
     )
 };
-export default Item;

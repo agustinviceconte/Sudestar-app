@@ -6,7 +6,7 @@ import "./ItemListContainer.css"
 import ItemList from "../ItemList/ItemList"
 
 
-export const ItemListContainer=({greeting})=>{
+    export const ItemListContainer=({greeting})=>{
     const[products, setProducts]=useState([]);
     const getProductsAsyncAwait = async()=> {
         const getProductAA= await fetch ("https://coderhouse.franncode.com/api/products")
@@ -21,9 +21,9 @@ export const ItemListContainer=({greeting})=>{
     
     return(
     <div className="itemListContainer">
-         <h1 className="greeting">{greeting}</h1>
+         <h2 className="greeting">{greeting}</h2>
          <ItemCount stock={15} initial={1}/>
-         <ItemList products={products}/>
+         
     
      </div>  
 
@@ -31,6 +31,9 @@ export const ItemListContainer=({greeting})=>{
     
     )
 }
+
+//<ItemList products={products}/>
+
 
 /*--------------------------------------------------*/
 /*console.log("Productos de ILC",products);*/
